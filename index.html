@@ -24,14 +24,14 @@
   <main>
     <div class="eyebrow">Welcome</div>
     <h1 id="helloTitle" style="cursor: pointer;"> Hello, world! ✨</h1>
-    <img id="myImage" src="1746501514123.jpg" alt="My picture" width="300" style="display: none;">
+    <img id="myImage" src="1746501514123.jpeg" alt="My picture" width="300" style="display: none;">
     <p>This is your new HTML webpage. Change the heading, colors, and content to make it your own.</p>
     <button id="helloButton" type="button">Click me</button>
     <div id="message" role="status" aria-live="polite"></div>
     <footer>Made with HTML, CSS &amp; JavaScript</footer>
   </main>
   <script>
-    document.getElementById('helloButton').addEventListener('click', () => {document.getElementById('message').textContent = 'Your webpage is working! 🎉';}); document.getElementById('helloTitle').addEventListener('click', () => {const image = document.getElementById('myImage'); if (image.style.display === 'none') {image.style.display = 'block';} else {image.style.display = 'none';}});
+ document.getElementById('helloButton').addEventListener('click', () => {const image = document.getElementById('myImage'); if (image.style.display === 'none') {image.style.display = 'block';  } else {image.style.display = 'none'; }  });
   </script>
 </body>
 </html>
